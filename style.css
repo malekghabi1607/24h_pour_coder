@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    margin: 0;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: none; /* Caché au départ */
+    border: 2px solid white;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(0, 255, 149);
+    color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(0, 133, 129);
+    color: white;
+}
+
+#accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    text-align: center;
+}
+
+.nom {
+    max-width: 300px; /* Ajuste la taille de l’image du nom */
+    margin-bottom: -20px;
+    margin-top: -50px;
+}
+
+.logo {
+    max-width: 150px; /* Ajuste la taille du logo */
+    margin-bottom: 20px;
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    border: 2px solid #00ff00;
+}
+
+#scoreBoard span {
+    color: #00ff00;
+    font-size: 26px;
+}
+
+#scoreTitle {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+#bestScoreTitle {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #accueil {
+        height: auto;
+        padding: 50px 20px;
+    }
+    .nom {
+        max-width: 100px;
+    }
+    .logo {
+        max-width: 70px;
+    }
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+    #scoreBoard {
+        top: 10px;
+        right: 10px;
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    #scoreBoard span {
+        font-size: 22px;
+    }
+}

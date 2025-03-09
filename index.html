@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Serpent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <section id="accueil">
+        <img src="nom.png" alt="Nom du jeu" class="nom">
+        <img src="logo.png" alt="Logo du jeu" class="logo">
+        <button id="startButton">Start</button>
+    </section>
+    <div id="scoreBoard">
+        <div id="scoreTitle">Score</div>
+        <span id="score">0</span>
+        <div id="bestScoreTitle">Meilleur Score</div>
+        <span id="bestScore">0</span>
+    </div>      
+    <div id="gameOverScreen" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.8); color: white; padding: 20px; text-align: center; border-radius: 10px;">
+        <h2>Game Over</h2>
+        <button id="restartButton">Rejouer</button>
+    </div>    
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>
